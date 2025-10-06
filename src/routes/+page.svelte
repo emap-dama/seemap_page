@@ -70,7 +70,6 @@
              alt="Dama"
              class="avatar-image"
         />
-        <span>DAMA</span>
       </div>
       <h4>Directorio Académico de Gatos</h4>
     </article>
@@ -80,7 +79,6 @@
              alt="FgvEmap"
              class="avatar-image"
         />
-        <span>FGV EMap</span>
       </div>
       <h4>Escola de Matemática Aplicada</h4>
     </article>
