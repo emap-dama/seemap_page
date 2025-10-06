@@ -1,5 +1,5 @@
 <script>
-  const ENDPOINT = import.meta.env.VITE_SCRIPT_URL;;
+  const ENDPOINT = "https://script.google.com/macros/s/AKfycbzh5EyeLHdO9TY49kmUSxX_FBM_04XPU19qaPyOCSffLiZ90is_IZTQLmF95Bna_Drx/exec";
 
   let form = { nome:'', email:'', instituicao:'', degree:'', comments:'' };
   let status = 'idle';   
