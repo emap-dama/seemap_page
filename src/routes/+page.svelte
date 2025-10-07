@@ -1,148 +1,162 @@
 <script>
   import { base } from '$app/paths';
   import RegistrationForm from '$lib/components/RegistrationForm.svelte';
+  import ScrollSection from "$lib/components/ScrollSection.svelte";
 </script>
 
-<section class="hero">
-  <div class="hero-background">
-    <div class="hero-overlay"></div>
-    <img 
-      src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1920&q=80" 
-      alt="Rio de Janeiro" 
-      class="hero-bg-image"
-    />
-  </div>
-  <div class="hero-content container">
-    <div class="hero-copy">
-      <p class="tag">Save the date</p>
-      <h1>Semana de Extensão da EMAp</h1>
-      <h2 class="date">3 a 5 de novembro</h2>
-      <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
-      <a href="#inscricao" class="cta">
-        <span>Inscrever-me</span>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
+<ScrollSection stepClass="scroll-step" offset={0.3}>
+
+  <!-- Hero -->
+  <section class="hero scroll-step">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <img 
+        src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1920&q=80" 
+        alt="Rio de Janeiro" 
+        class="hero-bg-image"
+      />
     </div>
-  </div>
-</section>
-
-<section class="container card gradient-border" id="programacao">
-  <div class="card-header">
-    <h3>Programação</h3>
-    <p class="card-subtitle">Agenda completa do evento</p>
-  </div>
-  <ul class="timeline">
-    <li>
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <strong>3 nov</strong>
-        <span class="timeline-text">Abertura + Palestra Principal</span>
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <p class="tag">Save the date</p>
+        <h1>Semana de Extensão da EMAp</h1>
+        <h2 class="date">3 a 5 de novembro</h2>
+        <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
+        <a href="#inscricao" class="cta">
+          <span>Inscrever-me</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
-    </li>
-    <li>
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <strong>4 nov</strong>
-        <span class="timeline-text">Workshops e mesas redondas</span>
-      </div>
-    </li>
-    <li>
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <strong>5 nov</strong>
-        <span class="timeline-text">Apresentações e encerramento</span>
-      </div>
-    </li>
-  </ul>
-</section>
+    </div>
+  </section>
 
-<section class="container card" id="apoio">
-  <div class="card-header">
-    <h3>Apoio e Organização</h3>  
-  </div>
+  <!-- Programação -->
+  <section id="programacao" class="container card gradient-border scroll-step">
+    <div class="card-header">
+      <h3>Programação</h3>
+      <p class="card-subtitle">Agenda completa do evento</p>
+    </div>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <strong>3 nov</strong>
+          <span class="timeline-text">Abertura + Palestra Principal</span>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <strong>4 nov</strong>
+          <span class="timeline-text">Workshops e mesas redondas</span>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <strong>5 nov</strong>
+          <span class="timeline-text">Apresentações e encerramento</span>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-  <div class="grid">
-    <article class="apoio-card">
-      <div class="apoio-avatar">
-        <img src= "https://emap.fgv.br/sites/default/files/2020-12/dama.jpg"
-             alt="Dama"
-             class="avatar-image"
-        />
-        <span></span>
-      </div>
-      <h4>Directorio Académico de Gatos</h4>
-    </article>
-    <article class="apoio-card">
-      <div class="apoio-avatar">
-        <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDx9dfF_w93CljtP6ujtLdCt6JBTiiNb_ISg&s"
-             alt="FgvEmap"
-             class="avatar-image"
-        />
-        <span></span>
-      </div>
-      <h4>Escola de Matemática Aplicada</h4>
-    </article>
-  </div>
-</section>
+  <!-- Apoio -->
+  <section id="apoio" class="container card scroll-step">
+    <div class="card-header">
+      <h3>Apoio e Organização</h3>  
+    </div>
+    <div class="grid">
+      <article class="apoio-card">
+        <div class="apoio-avatar">
+          <img src="https://emap.fgv.br/sites/default/files/2020-12/dama.jpg"
+               alt="Dama"
+               class="avatar-image"
+          />
+        </div>
+        <h4>Directorio Académico de Gatos</h4>
+      </article>
+      <article class="apoio-card">
+        <div class="apoio-avatar">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDx9dfF_w93CljtP6ujtLdCt6JBTiiNb_ISg&s"
+               alt="FgvEmap"
+               class="avatar-image"
+          />
+        </div>
+        <h4>Escola de Matemática Aplicada</h4>
+      </article>
+    </div>
+  </section>
 
-<section class="container card" id="palestrantes">
-  <div class="card-header">
-    <h3>Palestrantes</h3>
-    <p class="card-subtitle">Conheça quem vai compartilhar conhecimento</p>
-  </div>
-  <div class="grid">
-    <article class="speaker-card">
-      <div class="speaker-avatar">
-        <span>C1</span>
-      </div>
-      <h4>Convidado/a 1</h4>
-      <p class="muted">Área / Instituição</p>
-    </article>
-    <article class="speaker-card">
-      <div class="speaker-avatar">
-        <span>C2</span>
-      </div>
-      <h4>Convidado/a 2</h4>
-      <p class="muted">Área / Instituição</p>
-    </article>
-    <article class="speaker-card">
-      <div class="speaker-avatar">
-        <span>C3</span>
-      </div>
-      <h4>Convidado/a 3</h4>
-      <p class="muted">Área / Instituição</p>
-    </article>
-  </div>
-</section>
+  <!-- Palestrantes -->
+  <section id="palestrantes" class="container card scroll-step">
+    <div class="card-header">
+      <h3>Palestrantes</h3>
+      <p class="card-subtitle">Conheça quem vai compartilhar conhecimento</p>
+    </div>
+    <div class="grid">
+      <article class="speaker-card">
+        <div class="speaker-avatar"><span>C1</span></div>
+        <h4>Convidado/a 1</h4>
+        <p class="muted">Área / Instituição</p>
+      </article>
+      <article class="speaker-card">
+        <div class="speaker-avatar"><span>C2</span></div>
+        <h4>Convidado/a 2</h4>
+        <p class="muted">Área / Instituição</p>
+      </article>
+      <article class="speaker-card">
+        <div class="speaker-avatar"><span>C3</span></div>
+        <h4>Convidado/a 3</h4>
+        <p class="muted">Área / Instituição</p>
+      </article>
+    </div>
+  </section>
 
+  <!-- Local -->
+  <section id="local" class="container card scroll-step">
+    <div class="card-header">
+      <h3>Local</h3>
+      <p class="card-subtitle">Venha nos visitar</p>
+    </div>
+    <p>Endereço da EMAp — Cidade, País.</p>
+    <iframe
+      title="Mapa"
+      style="width:100%;height:350px;border:0;border-radius:12px;margin-top:16px"
+      loading="lazy"
+      allowfullscreen
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1156!2d-43.2305!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjUiUyA0M8KwMTMnNDkuOCJX!5e0!3m2!1sen!2sbr!4v1234567890">
+    </iframe>
+  </section>
 
+  <!-- Inscrição -->
+  <section id="inscricao" class="container card highlight-card scroll-step">
+    <div class="card-header">
+      <h3>Inscrição</h3>
+      <p class="card-subtitle">Preencha o formulário para reservar sua vaga.</p>
+    </div>
+    <RegistrationForm />
+  </section>
 
-<section class="container card" id="local">
-  <div class="card-header">
-    <h3>Local</h3>
-    <p class="card-subtitle">Venha nos visitar</p>
-  </div>
-  <p>Endereço da EMAp — Cidade, País.</p>
-  <iframe
-    title="Mapa"
-    style="width:100%;height:350px;border:0;border-radius:12px;margin-top:16px"
-    loading="lazy"
-    allowfullscreen
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1156!2d-43.2305!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjUiUyA0M8KwMTMnNDkuOCJX!5e0!3m2!1sen!2sbr!4v1234567890">
-  </iframe>
-</section>
+</ScrollSection>
 
-<section class="container card highlight-card" id="inscricao">
-  <div class="card-header">
-    <h3>Inscrição</h3>
-    <p class="card-subtitle">Preencha o formulário para reservar sua vaga.</p>
-  </div>
-  <RegistrationForm />
-</section>
 
 <style>
+
+  .scroll-step {
+    opacity: 1;
+    transform: none;
+    transition: all 0.6s ease;
+  }
+
+  .scroll-step.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
   .container{
     width: min(100% - 32px, 1080px);
     margin-inline: auto;

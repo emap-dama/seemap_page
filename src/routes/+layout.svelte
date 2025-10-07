@@ -39,6 +39,8 @@
   * { 
     box-sizing: border-box; 
   }
+
+
   
   :global(body), :global(html), .site { 
     margin:0; 
@@ -47,7 +49,7 @@
     color:var(--ink); 
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; 
   }
-  
+
   .container { 
     max-width: 1050px; 
     margin: 0 auto; 
