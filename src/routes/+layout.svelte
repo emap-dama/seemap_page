@@ -11,7 +11,7 @@
   <header>
     <div class="header-container container">
       <a class="brand" href="/">SEEMAp</a>
-      <nav>
+      <nav aria-label="Navegación principal">
         <a href="#programacao">Programação</a>
         <a href="#palestrantes">Palestrantes</a>
         <a href="#local">Sede</a>
@@ -23,7 +23,7 @@
   <slot />
 
   <footer class="container footer">
-    <p>© {new Date().getFullYear()} SEEMAp · 3–5 nov</p>
+    <p>© Made by: Ximena Gomez || {new Date().getFullYear()} SEEMAp · 3–5 nov</p>
   </footer>
 </div>
 

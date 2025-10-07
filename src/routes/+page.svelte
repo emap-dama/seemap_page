@@ -1,30 +1,38 @@
 <script>
-  import { base } from '$app/paths';
   import RegistrationForm from '$lib/components/RegistrationForm.svelte';
-  import ScrollSection from "$lib/components/ScrollSection.svelte";
+  import ScrollSection from '$lib/components/ScrollSection.svelte';
 </script>
 
-<ScrollSection stepClass="scroll-step" offset={0.3}>
+<ScrollSection stepClass="scroll-step" offset={0.5}>
 
   <!-- Hero -->
-  <section class="hero scroll-step">
-    <div class="hero-background">
-      <div class="hero-overlay"></div>
-      <img 
-        src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1920&q=80" 
-        alt="Rio de Janeiro" 
+  <section class="hero scroll-step" aria-labelledby="hero-title">
+    <div class="hero-background" aria-hidden="true">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <img
+        src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1920&q=80"
+        srcset="
+          https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=70 800w,
+          https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1280&q=75 1280w,
+          https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1920&q=80 1920w
+        "
+        sizes="100vw"
+        alt="Vista aérea do Rio de Janeiro"
         class="hero-bg-image"
+        decoding="async"
+        fetchpriority="high"
       />
+
     </div>
     <div class="hero-content container">
       <div class="hero-copy">
-        <p class="tag">Save the date</p>
-        <h1>Semana de Extensão da EMAp</h1>
-        <h2 class="date">3 a 5 de novembro</h2>
+        <p class="tag">Reserve na agenda</p>
+        <h1 id="hero-title">Semana de Extensão da EMAp</h1>
+        <h2 class="date" aria-describedby="hero-title">3 a 5 de novembro</h2>
         <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
         <a href="#inscricao" class="cta">
           <span>Inscrever-me</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
@@ -33,28 +41,28 @@
   </section>
 
   <!-- Programação -->
-  <section id="programacao" class="container card gradient-border scroll-step">
+  <section id="programacao" class="container card gradient-border scroll-step" aria-labelledby="programacao-title">
     <div class="card-header">
-      <h3>Programação</h3>
+      <h3 id="programacao-title">Programação</h3>
       <p class="card-subtitle">Agenda completa do evento</p>
     </div>
-    <ul class="timeline">
+    <ul class="timeline" aria-label="Linha do tempo do evento">
       <li>
-        <div class="timeline-marker"></div>
+        <div class="timeline-marker" aria-hidden="true"></div>
         <div class="timeline-content">
           <strong>3 nov</strong>
-          <span class="timeline-text">Abertura + Palestra Principal</span>
+          <span class="timeline-text">Abertura + Palestra principal</span>
         </div>
       </li>
       <li>
-        <div class="timeline-marker"></div>
+        <div class="timeline-marker" aria-hidden="true"></div>
         <div class="timeline-content">
           <strong>4 nov</strong>
-          <span class="timeline-text">Workshops e mesas redondas</span>
+          <span class="timeline-text">Workshops e mesas-redondas</span>
         </div>
       </li>
       <li>
-        <div class="timeline-marker"></div>
+        <div class="timeline-marker" aria-hidden="true"></div>
         <div class="timeline-content">
           <strong>5 nov</strong>
           <span class="timeline-text">Apresentações e encerramento</span>
@@ -64,77 +72,85 @@
   </section>
 
   <!-- Apoio -->
-  <section id="apoio" class="container card scroll-step">
+  <section id="apoio" class="container card scroll-step" aria-labelledby="apoio-title">
     <div class="card-header">
-      <h3>Apoio e Organização</h3>  
+      <h3 id="apoio-title">Apoio e organização</h3>  
     </div>
-    <div class="grid">
-      <article class="apoio-card">
-        <div class="apoio-avatar">
-          <img src="https://emap.fgv.br/sites/default/files/2020-12/dama.jpg"
-               alt="Dama"
-               class="avatar-image"
+    <div class="grid" role="list">
+      <article class="apoio-card" role="listitem">
+        <div class="apoio-avatar" aria-hidden="true">
+          <img 
+            src="https://emap.fgv.br/sites/default/files/2020-12/dama.jpg"
+            alt="Logomarca do DAMA"
+            class="avatar-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
-        <h4>Directorio Académico de Gatos</h4>
+        <h4>Diretório Acadêmico de Matemática Aplicada (DAMA)</h4>
       </article>
-      <article class="apoio-card">
-        <div class="apoio-avatar">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDx9dfF_w93CljtP6ujtLdCt6JBTiiNb_ISg&s"
-               alt="FgvEmap"
-               class="avatar-image"
+      <article class="apoio-card" role="listitem">
+        <div class="apoio-avatar" aria-hidden="true">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDx9dfF_w93CljtP6ujtLdCt6JBTiiNb_ISg&s"
+            alt="Logomarca da Escola de Matemática Aplicada"
+            class="avatar-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
-        <h4>Escola de Matemática Aplicada</h4>
+        <h4>Escola de Matemática Aplicada (EMAp/FGV)</h4>
       </article>
     </div>
   </section>
 
   <!-- Palestrantes -->
-  <section id="palestrantes" class="container card scroll-step">
+  <section id="palestrantes" class="container card scroll-step" aria-labelledby="palestrantes-title">
     <div class="card-header">
-      <h3>Palestrantes</h3>
+      <h3 id="palestrantes-title">Palestrantes</h3>
       <p class="card-subtitle">Conheça quem vai compartilhar conhecimento</p>
     </div>
-    <div class="grid">
-      <article class="speaker-card">
-        <div class="speaker-avatar"><span>C1</span></div>
-        <h4>Convidado/a 1</h4>
+    <div class="grid" role="list">
+      <article class="speaker-card" role="listitem">
+        <div class="speaker-avatar" aria-hidden="true"><span>C1</span></div>
+        <h4>Convidado(a) 1</h4>
         <p class="muted">Área / Instituição</p>
       </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar"><span>C2</span></div>
-        <h4>Convidado/a 2</h4>
+      <article class="speaker-card" role="listitem">
+        <div class="speaker-avatar" aria-hidden="true"><span>C2</span></div>
+        <h4>Convidado(a) 2</h4>
         <p class="muted">Área / Instituição</p>
       </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar"><span>C3</span></div>
-        <h4>Convidado/a 3</h4>
+      <article class="speaker-card" role="listitem">
+        <div class="speaker-avatar" aria-hidden="true"><span>C3</span></div>
+        <h4>Convidado(a) 3</h4>
         <p class="muted">Área / Instituição</p>
       </article>
     </div>
   </section>
 
   <!-- Local -->
-  <section id="local" class="container card scroll-step">
+  <section id="local" class="container card scroll-step" aria-labelledby="local-title">
     <div class="card-header">
-      <h3>Local</h3>
+      <h3 id="local-title">Local</h3>
       <p class="card-subtitle">Venha nos visitar</p>
     </div>
-    <p>Endereço da EMAp — Cidade, País.</p>
+    <p>Endereço da EMAp — Rio de Janeiro, Brasil.</p>
     <iframe
-      title="Mapa"
+      title="Mapa da EMAp"
       style="width:100%;height:350px;border:0;border-radius:12px;margin-top:16px"
       loading="lazy"
       allowfullscreen
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1156!2d-43.2305!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjUiUyA0M8KwMTMnNDkuOCJX!5e0!3m2!1sen!2sbr!4v1234567890">
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Praia+de+Botafogo,+190+-+Botafogo,+Rio+de+Janeiro+-+RJ,+22250-900&output=embed">
     </iframe>
+
   </section>
 
   <!-- Inscrição -->
-  <section id="inscricao" class="container card highlight-card scroll-step">
+  <section id="inscricao" class="container card highlight-card scroll-step" aria-labelledby="inscricao-title">
     <div class="card-header">
-      <h3>Inscrição</h3>
+      <h3 id="inscricao-title">Inscrição</h3>
       <p class="card-subtitle">Preencha o formulário para reservar sua vaga.</p>
     </div>
     <RegistrationForm />
@@ -145,17 +161,7 @@
 
 <style>
 
-  .scroll-step {
-    opacity: 1;
-    transform: none;
-    transition: all 0.6s ease;
-  }
-
-  .scroll-step.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
+  section[id] { scroll-margin-top: 84px; }
 
   .container{
     width: min(100% - 32px, 1080px);
@@ -166,7 +172,7 @@
 
   .hero { 
     position: relative;
-    min-height: 600px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -174,10 +180,7 @@
 
   .hero-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     z-index: 0;
   }
 
@@ -197,11 +200,8 @@
 
   .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(27, 119, 231, 0.65);
+    inset: 0;
+    background: rgba(0, 39, 87, 0.65);
     z-index: 1;
   }
 
@@ -214,9 +214,7 @@
     text-align: center;
   }
 
-  .hero-copy {
-    max-width: 700px;
-  }
+  .hero-copy { max-width: 700px; margin-inline: auto; }
 
   .hero-copy h1 { 
     font-size: clamp(2.5rem, 5vw, 4rem); 
@@ -267,7 +265,7 @@
     text-decoration: none; 
     font-weight: 700;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
 
@@ -277,22 +275,23 @@
     background: #f0f9ff;
   }
 
-  .cta svg {
-    transition: transform 0.3s ease;
+  .cta svg { 
+    transition: transform 0.3s ease; 
+  }
+  .cta:hover svg { 
+    transform: translateX(4px); 
   }
 
-  .cta:hover svg {
-    transform: translateX(4px);
+  .card { 
+    margin-bottom: 32px; 
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    min-height: auto;
   }
-
-  .card {
-    margin-bottom: 32px;
-    transition: all 0.3s ease;
-  }
-
-  .card:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  }
+  .card:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); transform: translateY(-2px); }
 
   .gradient-border {
     position: relative;
@@ -302,25 +301,12 @@
     background-clip: padding-box, border-box;
   }
 
-  .highlight-card {
-    background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%);
-  }
+  .highlight-card { background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%); }
 
-  .card-header {
-    margin-bottom: 24px;
-  }
+  .card-header { margin-bottom: 24px; }
 
-  .card h3 {
-    margin: 0 0 8px;
-    font-size: 2rem;
-    font-weight: 800;
-  }
-
-  .card-subtitle {
-    color: #667085;
-    margin: 0;
-    font-size: 1rem;
-  }
+  .card h3 { margin: 0 0 8px; font-size: 2rem; font-weight: 800; }
+  .card-subtitle { color: #667085; margin: 0; font-size: 1rem; }
 
   .timeline { 
     line-height: 1.9; 
@@ -329,11 +315,7 @@
     list-style: none;
   }
 
-  .timeline li {
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 24px;
-  }
+  .timeline li { position: relative; padding-left: 40px; margin-bottom: 24px; }
 
   .timeline-marker {
     position: absolute;
@@ -346,22 +328,11 @@
     box-shadow: 0 0 0 4px rgba(27, 119, 231, 0.1);
   }
 
-  .timeline-content {
-    display: flex;
-    gap: 12px;
-    align-items: baseline;
-  }
+  .timeline-content { display: flex; gap: 12px; align-items: baseline; }
 
-  .timeline li strong {
-    color: #1b77e7;
-    font-weight: 800;
-    font-size: 1.05rem;
-    min-width: 60px;
-  }
+  .timeline li strong { color: #1b77e7; font-weight: 800; font-size: 1.05rem; min-width: 60px; }
 
-  .timeline-text {
-    color: #475467;
-  }
+  .timeline-text { color: #475467; }
 
   .grid { 
     display: grid; 
@@ -374,104 +345,53 @@
     background: #ffffff;
     border: 2px solid #f0f4f8;
     border-radius: 16px;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
     text-align: center;
   }
 
-  .apoio-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-    border-color: #1b77e7;
+  .apoio-card:hover { 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-4px); 
+    border-color: #1b77e7; 
   }
 
-  .apoio-avatar {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3);
+  .apoio-avatar{ 
+    width: 200px; height: 200px; 
+    margin: 0 auto 16px; border-radius: 50%; 
+    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); display: flex; 
+    align-items: center; justify-content: center; 
+    font-weight: 800; font-size: 1.5rem; color: #000; 
+    box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3); 
   }
 
-  .apoio-card h4 {
-    margin: 0 0 8px;
-    font-size: 1.25rem;
-    font-weight: 700;
+  .apoio-card h4{ 
+    margin: 0 0 8px; 
+    font-size: 1.25rem; 
+    font-weight: 700; 
   }
 
-  .speaker-card {
-    padding: 24px;
-    background: #ffffff;
-    border: 2px solid #f0f4f8;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    text-align: center;
+  .speaker-card { 
+    padding: 24px; background: #ffffff; 
+    border: 2px solid #f0f4f8; 
+    border-radius: 16px; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; 
+    text-align: center; 
   }
 
-  .speaker-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-    border-color: #1b77e7;
-  }
+  .speaker-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); transform: translateY(-4px); border-color: #1b77e7; }
 
-  .speaker-avatar {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: white;
-    box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3);
-  }
+  .speaker-avatar { width: 80px; height: 80px; margin: 0 auto 16px; border-radius: 50%; background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.5rem; color: white; box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3); }
 
-  .speaker-card h4 {
-    margin: 0 0 8px;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
+  .speaker-card h4 { margin: 0 0 8px; font-size: 1.25rem; font-weight: 700; }
 
-  .muted { 
-    color: #667085; 
-    margin: 0;
-    font-size: 0.95rem;
-  }
+  .muted { color: #667085; margin: 0; font-size: 0.95rem; }
 
   @media (max-width: 880px) { 
-    .hero {
-      min-height: 500px;
-    }
-
-    .hero-content {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    .hero-copy h1 {
-      font-size: 2rem;
-    }
-
-    .hero-copy .date {
-      font-size: 1.8rem;
-    }
-
-    .timeline li {
-      padding-left: 32px;
-    }
-
-    .timeline-content {
-      flex-direction: column;
-      gap: 4px;
-    }
+    .hero { min-height: 500px; }
+    .hero-content { padding-top: 60px; padding-bottom: 60px; }
+    .hero-copy h1 { font-size: 2rem; }
+    .hero-copy .date { font-size: 1.8rem; }
+    .timeline li { padding-left: 32px; }
+    .timeline-content { flex-direction: column; gap: 4px; }
   }
 </style>
