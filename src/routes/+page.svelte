@@ -70,6 +70,7 @@
              alt="Dama"
              class="avatar-image"
         />
+        <span></span>
       </div>
       <h4>Directorio Académico de Gatos</h4>
     </article>
@@ -79,6 +80,7 @@
              alt="FgvEmap"
              class="avatar-image"
         />
+        <span></span>
       </div>
       <h4>Escola de Matemática Aplicada</h4>
     </article>
@@ -141,6 +143,13 @@
 </section>
 
 <style>
+  .container{
+    width: min(100% - 32px, 1080px);
+    margin-inline: auto;
+  }
+
+  img{ max-width:100%; height:auto; display:block; }
+
   .hero { 
     position: relative;
     min-height: 600px;
