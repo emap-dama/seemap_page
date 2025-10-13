@@ -1,6 +1,7 @@
 <script>
   import RegistrationForm from '$lib/components/RegistrationForm.svelte';
   import ScrollSection from '$lib/components/ScrollSection.svelte';
+  import { assets } from '$app/paths';
 </script>
 
 <ScrollSection stepClass="scroll-step" offset={0.5}>
@@ -26,7 +27,7 @@
     <div class="hero-content container">
       <div class="hero-title-wrapper">
         <img
-          src="/favicon.png"
+          src={`${assets}/favicon.png`}
           alt="Logomarca da EMAp"
           class="hero-favicon"
           width="200"
