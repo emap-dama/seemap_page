@@ -22,20 +22,28 @@
         decoding="async"
         fetchpriority="high"
       />
-
     </div>
     <div class="hero-content container">
-      <div class="hero-copy">
-        <p class="tag">Reserve na agenda</p>
-        <h1 id="hero-title">Semana de Extensão da EMAp</h1>
-        <h2 class="date" aria-describedby="hero-title">3 a 5 de novembro</h2>
-        <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
-        <a href="#inscricao" class="cta">
-          <span>Inscrever-me</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
-            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+      <div class="hero-title-wrapper">
+        <img
+          src="/favicon.png"
+          alt="Logomarca da EMAp"
+          class="hero-favicon"
+          width="200"
+          height="200"
+        />
+        <div class="hero-copy">
+          <p class="tag">Reserve na agenda</p>
+          <h1 id="hero-title">Semana de Extensão<br>da EMAp</h1>
+          <h2 class="date" aria-describedby="hero-title">3 a 5 de novembro</h2>
+          <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
+          <a href="#inscricao" class="cta">
+            <span>Inscrever-me</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -43,9 +51,13 @@
   <!-- Programação -->
   <section id="programacao" class="container card gradient-border scroll-step" aria-labelledby="programacao-title">
     <div class="card-header">
-      <h3 id="programacao-title">Programação</h3>
-      <p class="card-subtitle">Agenda completa do evento</p>
+      <!-- <h3 id="programacao-title">Programação</h3>-->
+      <p class="card-subtitle">A SEEMAp (Semana de Extensão da EMAp) é um evento que procura reunir os
+corpos discente e docente da EMAp para discutir sobre áreas de interesse na
+matemática e na computação por meio de palestras, minicursos, workshops e
+apresentações.</p>
     </div>
+    <h4 >Programação</h4>
     <ul class="timeline" aria-label="Linha do tempo do evento">
       <li>
         <div class="timeline-marker" aria-hidden="true"></div>
@@ -74,7 +86,7 @@
   <!-- Apoio -->
   <section id="apoio" class="container card scroll-step" aria-labelledby="apoio-title">
     <div class="card-header">
-      <h3 id="apoio-title">Apoio e organização</h3>  
+      <h3 id="apoio-title">Organização</h3>  
     </div>
     <div class="grid" role="list">
       <article class="apoio-card" role="listitem">
@@ -144,7 +156,6 @@
       referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps?q=Praia+de+Botafogo,+190+-+Botafogo,+Rio+de+Janeiro+-+RJ,+22250-900&output=embed">
     </iframe>
-
   </section>
 
   <!-- Inscrição -->
@@ -158,17 +169,15 @@
 
 </ScrollSection>
 
-
 <style>
-
   section[id] { scroll-margin-top: 84px; }
 
-  .container{
+  .container {
     width: min(100% - 32px, 1080px);
     margin-inline: auto;
   }
 
-  img{ max-width:100%; height:auto; display:block; }
+  img { max-width: 100%; height: auto; display: block; }
 
   .hero { 
     position: relative;
@@ -191,17 +200,10 @@
     object-position: center;
   }
   
-  .avatar-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 39, 87, 0.65);
+    background: rgba(0, 27, 59, 0.705);
     z-index: 1;
   }
 
@@ -209,28 +211,51 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
+  }
+
+  .hero-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-favicon {
+    width: clamp(180px, 27vw, 396px);
+    height: auto;
+    flex-shrink: 0;
+    
+  }
+
+  .hero-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-copy {
     text-align: center;
   }
 
-  .hero-copy { max-width: 700px; margin-inline: auto; }
-
-  .hero-copy h1 { 
-    font-size: clamp(2.5rem, 5vw, 4rem); 
-    margin: 0 0 16px; 
-    line-height: 1.1;
+  .hero-copy h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
     color: #ffffff;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    line-height: 1.1;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.5);
   }
 
-  .hero-copy .date { 
-    font-size: clamp(2rem, 4vw, 3.2rem); 
-    margin: 0 0 24px; 
-    color: #ffffff;
+  .hero-copy .date {
+    margin: 0 0 24px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 800;
+    color: #ffffff;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   }
 
@@ -257,7 +282,6 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 8px; 
     padding: 16px 32px; 
     background: #ffffff;
     color: #1b77e7; 
@@ -278,8 +302,21 @@
   .cta svg { 
     transition: transform 0.3s ease; 
   }
+  
   .cta:hover svg { 
     transform: translateX(4px); 
+  }
+
+  @media (max-width: 768px) {
+    .hero-title-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 24px;
+    }
+    
+    .hero-favicon {
+      width: clamp(100px, 20vw, 160px);
+    }
   }
 
   .card { 
@@ -289,24 +326,38 @@
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    min-height: auto;
   }
-  .card:hover { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); transform: translateY(-2px); }
+  
+  .card:hover { 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); 
+    transform: translateY(-2px); 
+  }
 
   .gradient-border {
     position: relative;
     border: 2px solid transparent;
-    background-image: linear-gradient(#f8fafc, #f8fafc), linear-gradient(135deg, #1b77e7, #0ea5e9);
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #1b77e7, #0ea5e9);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
 
-  .highlight-card { background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%); }
+  .highlight-card { 
+    background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%); 
+  }
 
   .card-header { margin-bottom: 24px; }
 
-  .card h3 { margin: 0 0 8px; font-size: 2rem; font-weight: 800; }
-  .card-subtitle { color: #667085; margin: 0; font-size: 1rem; }
+  .card h3 { 
+    margin: 0 0 8px; 
+    font-size: 2rem; 
+    font-weight: 800; 
+  }
+  
+  .card-subtitle { 
+    color: #667085; 
+    margin: 0; 
+    font-size: 1rem; 
+  }
 
   .timeline { 
     line-height: 1.9; 
@@ -315,7 +366,11 @@
     list-style: none;
   }
 
-  .timeline li { position: relative; padding-left: 40px; margin-bottom: 24px; }
+  .timeline li { 
+    position: relative; 
+    padding-left: 40px; 
+    margin-bottom: 24px; 
+  }
 
   .timeline-marker {
     position: absolute;
@@ -328,9 +383,18 @@
     box-shadow: 0 0 0 4px rgba(27, 119, 231, 0.1);
   }
 
-  .timeline-content { display: flex; gap: 12px; align-items: baseline; }
+  .timeline-content { 
+    display: flex; 
+    gap: 12px; 
+    align-items: baseline; 
+  }
 
-  .timeline li strong { color: #1b77e7; font-weight: 800; font-size: 1.05rem; min-width: 60px; }
+  .timeline li strong { 
+    color: #1b77e7; 
+    font-weight: 800; 
+    font-size: 1.05rem; 
+    min-width: 60px; 
+  }
 
   .timeline-text { color: #475467; }
 
@@ -340,7 +404,7 @@
     gap: 20px; 
   }
 
-  .apoio-card{
+  .apoio-card {
     padding: 24px;
     background: #ffffff;
     border: 2px solid #f0f4f8;
@@ -355,42 +419,73 @@
     border-color: #1b77e7; 
   }
 
-  .apoio-avatar{ 
-    width: 200px; height: 200px; 
-    margin: 0 auto 16px; border-radius: 50%; 
-    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); display: flex; 
-    align-items: center; justify-content: center; 
-    font-weight: 800; font-size: 1.5rem; color: #000; 
+  .apoio-avatar { 
+    width: 200px; 
+    height: 200px; 
+    margin: 0 auto 16px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); 
     box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3); 
   }
 
-  .apoio-card h4{ 
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .apoio-card h4 { 
     margin: 0 0 8px; 
     font-size: 1.25rem; 
     font-weight: 700; 
   }
 
   .speaker-card { 
-    padding: 24px; background: #ffffff; 
+    padding: 24px; 
+    background: #ffffff; 
     border: 2px solid #f0f4f8; 
     border-radius: 16px; 
     transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; 
     text-align: center; 
   }
 
-  .speaker-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); transform: translateY(-4px); border-color: #1b77e7; }
+  .speaker-card:hover { 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-4px); 
+    border-color: #1b77e7; 
+  }
 
-  .speaker-avatar { width: 80px; height: 80px; margin: 0 auto 16px; border-radius: 50%; background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.5rem; color: white; box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3); }
+  .speaker-avatar { 
+    width: 80px; 
+    height: 80px; 
+    margin: 0 auto 16px; 
+    border-radius: 50%; 
+    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: 800; 
+    font-size: 1.5rem; 
+    color: white; 
+    box-shadow: 0 4px 20px rgba(27, 119, 231, 0.3); 
+  }
 
-  .speaker-card h4 { margin: 0 0 8px; font-size: 1.25rem; font-weight: 700; }
+  .speaker-card h4 { 
+    margin: 0 0 8px; 
+    font-size: 1.25rem; 
+    font-weight: 700; 
+  }
 
-  .muted { color: #667085; margin: 0; font-size: 0.95rem; }
+  .muted { 
+    color: #667085; 
+    margin: 0; 
+    font-size: 0.95rem; 
+  }
 
   @media (max-width: 880px) { 
     .hero { min-height: 500px; }
-    .hero-content { padding-top: 60px; padding-bottom: 60px; }
-    .hero-copy h1 { font-size: 2rem; }
-    .hero-copy .date { font-size: 1.8rem; }
+    .hero-content { padding: 60px 0; }
     .timeline li { padding-left: 32px; }
     .timeline-content { flex-direction: column; gap: 4px; }
   }

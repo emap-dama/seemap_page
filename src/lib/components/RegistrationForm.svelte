@@ -70,8 +70,8 @@
   <input placeholder="Nome" bind:value={form.nome} required />
   <input type="email" placeholder="Email" bind:value={form.email} required />
   <input placeholder="Instituição" bind:value={form.instituicao} />
-  <input placeholder="Degree" bind:value={form.degree} />
-  <textarea placeholder="Comments" bind:value={form.comments}></textarea>
+  <input placeholder="Periodo(Indicar se é pos)" bind:value={form.degree} />
+  <textarea placeholder="Descrição (Envie abaixo seu resumo)" bind:value={form.comments}></textarea>
 
   <input
     placeholder="Arquivo"
