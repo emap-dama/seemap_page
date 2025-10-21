@@ -204,7 +204,7 @@
   }
 
   thead th {
-    background: linear-gradient(135deg, #1b77e7 0%, #0ea5e9 100%);
+    background: #1b77e7;
     color: white;
     padding: 20px 12px;
     text-align: center;
