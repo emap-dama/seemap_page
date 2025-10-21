@@ -52,12 +52,12 @@
       <p class="card-subtitle">Exposições de banners e apresentações orais.</p>
     </div>
     <p>
-      Cada aluno desenvolve um projeto (iniciativa própria ou iniciação científica) e o apresenta junto com o banner ao longo de aproximadamente <strong>1h30</strong>. 
+      Cada aluno desenvolve um projeto (iniciativa própria ou iniciação científica) e o apresenta junto com o banner ao longo de aproximadamente <strong>2h</strong>. 
       Os projetos recebem avaliação de professores da EMAp com parecer profissional sobre a condução e melhorias possíveis da pesquisa.
     </p>
   </section>
 
-  <!-- Avaliação -->
+  <!-- Avaliação 
   <section id="avaliacao" class="container card scroll-step" aria-labelledby="avaliacao-title">
     <div class="card-header">
       <h3 id="avaliacao-title">Avaliação</h3>
@@ -70,7 +70,7 @@
       <li><span aria-hidden="true">✓</span> Comunicação (apresentação oral e banner)</li>
       <li><span aria-hidden="true">✓</span> Referências e contextualização</li>
     </ul>
-  </section>
+  </section>-->
 
   <!-- Etapas de Inscrição -->
   <section id="etapas" class="container card scroll-step" aria-labelledby="etapas-title">
@@ -94,6 +94,19 @@
         </div>
       </li>
     </ol>
+  </section>
+  <section id="edital" class="container card scroll-step" aria-labelledby="edital-title">
+    <div class="card-header">
+      <h3 id="edital-title">Edital</h3>
+    </div>
+    <div class="card-body">
+      <iframe 
+        src="https://drive.google.com/file/d/1n7OuIeA05VrfVVuSMUJE74fVEsA_Svys/preview" 
+        width="100%" 
+        height="600" 
+        allow="autoplay">
+      </iframe>
+    </div>
   </section>
   <!-- Inscrição -->
   <section id="inscricao" class="container card highlight-card scroll-step" aria-labelledby="inscricao-title">
