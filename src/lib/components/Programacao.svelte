@@ -17,7 +17,7 @@
         sessions: {
           session1: {
             title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Nesta palestra, exploraremos como a matemática avançada e técnicas de ciência de dados estão revolucionando o mercado financeiro. Discutiremos aplicações práticas de machine learning, análise de séries temporais e modelos estocásticos no trading, gestão de risco e previsão de mercados.',
             room: 'A confirmar',
             color: 'blue'
@@ -25,7 +25,7 @@
           break1: { type: 'break', title: 'Tempo Libre' },
           session2: {
             title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Uma análise profunda sobre as teorias fundamentais da visualização de dados e uma proposta inovadora chamada Vizagrams. Veremos como representações visuais podem transformar dados complexos em insights compreensíveis.',
             room: 'A confirmar',
             color: 'green'
@@ -33,7 +33,7 @@
           break2: { type: 'break', title: 'Tempo Libre' },
           session3: {
             title: 'Palestra',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Uma palestra especial que será revelada em breve. Prepare-se para uma apresentação que promete trazer novos insights sobre matemática aplicada.',
             room: 'A confirmar',
             color: 'pink'
@@ -47,7 +47,7 @@
         sessions: {
           session1: {
             title: 'Não importa o que você faça, se souber Matemática fará melhor!',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Uma palestra inspiradora sobre como o conhecimento matemático é uma ferramenta universal. Discutiremos casos práticos onde a matemática fez a diferença em diversos campos.',
             room: 'A confirmar',
             color: 'blue'
@@ -55,7 +55,7 @@
           break1: { type: 'break', title: 'Tempo Libre' },
           session2: {
             title: 'Palestra',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Uma apresentação especial que promete trazer contribuições significativas para o evento.',
             room: 'A confirmar',
             color: 'green'
@@ -63,7 +63,7 @@
           break2: { type: 'break', title: 'Tempo Libre' },
           session3: {
             title: 'Princípio da Casa dos Pombos',
-            speaker: 'Surpresa olhe o Instagram do DAMA para descubrir',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
             abstract: 'Uma exploração fascinante de um dos princípios mais elegantes e poderosos da matemática discreta. Veremos aplicações surpreendentes em diversas áreas.',
             room: 'A confirmar',
             color: 'pink'

@@ -100,7 +100,7 @@ apresentações.</p>
     </div>
   </section>
 
-  <!-- Palestrantes -->
+  <!-- Palestrantes 
   <section id="palestrantes" class="container card scroll-step" aria-labelledby="palestrantes-title">
     <div class="card-header">
       <h3 id="palestrantes-title">Palestrantes</h3>
@@ -123,7 +123,16 @@ apresentações.</p>
         <p class="muted">Área / Instituição</p>
       </article>
     </div>
+  </section>-->
+
+  <section id="trabalhos" class="container card scroll-step" aria-labelledby="trabalhos-title">
+    <div class="card-header">
+      <h3 id="trabalhos-title">Apresentação de Trabalhos</h3>
+      <p class="card-subtitle">Alunos podem submeter seus trabalhos para apresentação durante a SEEMAp.</p>
+    </div>
+    <a href="/semap_alunos" class="cta secondary">Enviar meu trabalho</a>
   </section>
+
 
   <!-- Local -->
   <section id="local" class="container card scroll-step" aria-labelledby="local-title">
