@@ -83,7 +83,7 @@
   />
 
   <button disabled={status==='sending'}>
-    {status==='sending' ? 'Enviando…' : 'Enviar inscripción'}
+    {status==='sending' ? 'Enviando…' : 'Enviar inscripção'}
   </button>
 
   {#if status==='ok'}
