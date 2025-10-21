@@ -127,10 +127,7 @@
 
   <!-- Inscrição -->
   <section id="inscricao" class="container card highlight-card scroll-step" aria-labelledby="inscricao-title">
-    <div class="card-header">
-      <h3 id="inscricao-title">Pré-inscrição</h3>
-      <p class="card-subtitle">Preencha os campos abaixo. Você pode substituir este formulário por um link para Google Forms, se preferir.</p>
-    </div>
+    
 
     {#if submitted}
       <div class="notice success" role="status" aria-live="polite">
