@@ -9,11 +9,11 @@
   const sessions = [
     { id: '3-14', day: '3', time: '14h', speaker: '', title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro' },
     { id: '3-1530', day: '3', time: '15h30', speaker: '', title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço' },
-    { id: '3-17', day: '3', time: '17h', speaker: '', title: '' },
+    { id: '3-17', day: '3', time: '17h', speaker: '', title: 'Leilões e Matemática' },
     { id: '4-14', day: '4', time: '14h', speaker: '', title: 'Não importa o que você faça, se souber Matemática fará melhor!' },
-    { id: '4-1530', day: '4', time: '15h30', speaker: '', title: '' },
+    { id: '4-1530', day: '4', time: '15h30', speaker: '', title: 'Estamos passando por uma instabilidade em nosso sistema' },
     { id: '4-17', day: '4', time: '17h', speaker: '', title: 'Princípio da Casa dos Pombos' },
-    { id: '5-14', day: '5', time: '14h', speaker: '', title: 'Apresentação das apresentações dos alunos' },
+    { id: '5-14', day: '5', time: '14h', speaker: '', title: 'Apresentação de alunos' },
     { id: '5-16', day: '5', time: '16h', speaker: '', title: 'Olimpíadas de matemática no Brasil' },
   ];
 

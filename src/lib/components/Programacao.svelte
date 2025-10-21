@@ -32,9 +32,9 @@
           },
           break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
-            title: 'Palestra',
+            title: 'Leilões e Matemática',
             speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
-            abstract: 'Uma palestra especial que será revelada em breve. Prepare-se para uma apresentação que promete trazer novos insights sobre matemática aplicada.',
+            abstract: '',
             room: 'A confirmar',
             color: 'pink'
           }
@@ -54,9 +54,8 @@
           },
           break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
-            title: 'Palestra',
-            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
-            abstract: 'Uma apresentação especial que promete trazer contribuições significativas para o evento.',
+            title: 'Estamos passando por uma instabilidade em nosso sistema',
+            speaker: 'Diferentes aplicações podem ser descritas por um sistemas de equações. Nessa apresentação vamos apresentar quais são os possíveis casos de instabilidade que podem surgir durante o estudo de um sistema. Comentando situações que envolvem sistemas lineares simples, sistemas obtidos para aproximações numéricas, até sistemas dinâmicos mais complexos.',
             room: 'A confirmar',
             color: 'green'
           },
@@ -76,7 +75,7 @@
         dayName: 'Quarta',
         sessions: {
           session1: {
-            title: 'Apresentação das apresentações dos alunos',
+            title: 'Apresentação de alunos',
             speaker: 'Alunos Participantes',
             abstract: 'Momento especial onde os alunos apresentarão seus trabalhos, pesquisas e projetos desenvolvidos.',
             room: 'A confirmar',
