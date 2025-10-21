@@ -1,7 +1,12 @@
 <script>
-  import RegistrationForm from '$lib/components/RegistrationForm.svelte';
   import ScrollSection from '$lib/components/ScrollSection.svelte';
+  import InscriptionForm from '$lib/components/InscriptionForm.svelte';
+  import Programacao from '$lib/components/Programacao.svelte';
+
   import { assets } from '$app/paths';
+  
+  let submitted = false;
+
 </script>
 
 <ScrollSection stepClass="scroll-step" offset={0.5}>
@@ -59,29 +64,7 @@ matemática e na computação por meio de palestras, minicursos, workshops e
 apresentações.</p>
     </div>
     <h4 >Programação</h4>
-    <ul class="timeline" aria-label="Linha do tempo do evento">
-      <li>
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <strong>3 nov</strong>
-          <span class="timeline-text">Abertura + Palestra principal</span>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <strong>4 nov</strong>
-          <span class="timeline-text">Workshops e mesas-redondas</span>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <strong>5 nov</strong>
-          <span class="timeline-text">Apresentações e encerramento</span>
-        </div>
-      </li>
-    </ul>
+    <Programacao />
   </section>
 
   <!-- Apoio -->
@@ -161,11 +144,17 @@ apresentações.</p>
 
   <!-- Inscrição -->
   <section id="inscricao" class="container card highlight-card scroll-step" aria-labelledby="inscricao-title">
-    <div class="card-header">
-      <h3 id="inscricao-title">Inscrição</h3>
-      <p class="card-subtitle">Preencha o formulário para reservar sua vaga.</p>
-    </div>
-    <RegistrationForm />
+    <InscriptionForm />
+  </section>
+
+  <section id="inscricao" class="container card highlight-card scroll-step" aria-labelledby="inscricao-title">
+  
+    {#if submitted}
+      <div class="notice success" role="status" aria-live="polite">
+        Pré-inscrição enviada! Em breve entraremos em contato por e-mail.
+      </div>
+    {/if}
+
   </section>
 
 </ScrollSection>
