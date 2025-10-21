@@ -15,7 +15,7 @@
         <a href="#programacao">Programação</a>
         <a href="#palestrantes">Palestrantes</a>
         <a href="#local">Sede</a>
-        <a href="#inscricao" class="btn">Inscrever-me</a>
+        <a href="#inscricao" class="btn">Inscrever-se</a>
       </nav>
     </div>
   </header>

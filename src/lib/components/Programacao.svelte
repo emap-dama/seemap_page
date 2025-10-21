@@ -22,7 +22,7 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break1: { type: 'break', title: 'Tempo Libre' },
+          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço',
             speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
@@ -30,7 +30,7 @@
             room: 'A confirmar',
             color: 'green'
           },
-          break2: { type: 'break', title: 'Tempo Libre' },
+          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Palestra',
             speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
@@ -52,7 +52,7 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break1: { type: 'break', title: 'Tempo Libre' },
+          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Palestra',
             speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
@@ -60,7 +60,7 @@
             room: 'A confirmar',
             color: 'green'
           },
-          break2: { type: 'break', title: 'Tempo Libre' },
+          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Princípio da Casa dos Pombos',
             speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
@@ -82,7 +82,7 @@
             room: 'A confirmar',
             color: 'yellow'
           },
-          break1: { type: 'break', title: 'Tempo Libre' },
+          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Olimpíadas de matemática no Brasil',
             speaker: 'Palestrantes Surpresa',
@@ -90,7 +90,7 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break2: { type: 'break', title: 'Tempo Libre' },
+          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Coffee Break Final',
             speaker: '',

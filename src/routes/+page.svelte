@@ -44,7 +44,7 @@
           <h2 class="date" aria-describedby="hero-title">3 a 5 de novembro</h2>
           <p class="subtitle">Palestras, workshops e atividades na EMAp. Vagas limitadas.</p>
           <a href="#inscricao" class="cta">
-            <span>Inscrever-me</span>
+            <span>Inscrever-se</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
               <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
