@@ -1,3 +1,7 @@
+<script>
+  import { assets } from '$app/paths';
+
+</script>
 <svelte:head>
   <title>SEEMAp — 3 a 5 de novembro</title>
   <meta name="description" content="Semana de Extensão da EMap — 3 a 5 de novembro. Inscrições, programação e informações do evento." />
@@ -10,7 +14,7 @@
 <div class="site">
   <header>
     <div class="header-container container">
-      <a class="brand" href="/">SEEMAp</a>
+      <a class="brand" href={`${assets}/`}>SEEMAp</a>
       <nav aria-label="Navegación principal">
         <a href="#programacao">Programação</a>
         <a href="#palestrantes">Palestrantes</a>
