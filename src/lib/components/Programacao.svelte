@@ -55,7 +55,8 @@
           break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Estamos passando por uma instabilidade em nosso sistema',
-            speaker: 'Diferentes aplicações podem ser descritas por um sistemas de equações. Nessa apresentação vamos apresentar quais são os possíveis casos de instabilidade que podem surgir durante o estudo de um sistema. Comentando situações que envolvem sistemas lineares simples, sistemas obtidos para aproximações numéricas, até sistemas dinâmicos mais complexos.',
+            speaker: 'Olhe o Instagram do DAMA para descubrir o palestrante',
+            abstract: 'Diferentes aplicações podem ser descritas por um sistemas de equações. Nessa apresentação vamos apresentar quais são os possíveis casos de instabilidade que podem surgir durante o estudo de um sistema. Comentando situações que envolvem sistemas lineares simples, sistemas obtidos para aproximações numéricas, até sistemas dinâmicos mais complexos.',
             room: 'A confirmar',
             color: 'green'
           },
