@@ -127,7 +127,7 @@ apresentações.</p>
 
   <section id="trabalhos" class="container card scroll-step" aria-labelledby="trabalhos-title">
     <div class="card-header">
-      <h3 id="trabalhos-title">Apresentação de Trabalhos</h3>
+      <h3 id="trabalhos-title">Envie seu Trabalhos</h3>
       <p class="card-subtitle">Alunos podem submeter seus trabalhos para apresentação durante a SEEMAp.</p>
     </div>
     <a href="/semap_alunos" class="cta secondary">Enviar meu trabalho</a>
