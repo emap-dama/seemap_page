@@ -1,5 +1,5 @@
 <script>
-  const ENDPOINT = "https://script.google.com/macros/s/AKfycbwwt75vFjHZBZfD_DVS6o2sZlFRoYYVuoQGL9YCOMJ_dBTWbOQoZ0JTac0ePmP-kv1RVw/exec";
+  const ENDPOINT = "https://script.google.com/macros/s/AKfycbxvhdvrgnqpPctgmG_rfp903ozTLtKbyHM73nTWmDaSU0hEcMLVY27FZJUYJOoU4wcx/exec";
 
   let form = { nome: '', email: '', instituicao: '', degree: '', comments: '' };
   let selectedTalks = [];
