@@ -1,5 +1,5 @@
 <script>
-  const ENDPOINT = "https://script.google.com/macros/s/AKfycbywuHuYk_G6FOiBc2hwHaA6paB7lilWEeHrp5b8D1RTsGvqM8z042i3XVcBNsmYOtriaQ/exec";
+  const ENDPOINT = "https://script.google.com/macros/s/AKfycbyhQlRPkbDtJU0SUfer4THT18BgYTtswY6N9CToVt6Dp_Ldc4w3o5I5CJ54TGCiwmyznA/exec";
 
   let form = { nome:'', email:'', instituicao:'', degree:'', comments:'' };
   let status = 'idle';
