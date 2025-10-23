@@ -32,9 +32,9 @@
           },
           break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
-            title: 'Leilões e Matemática',
+            title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
-            abstract: '',
+            abstract: 'A matemática dos leilões',
             room: 'A confirmar',
             color: 'pink'
           }
