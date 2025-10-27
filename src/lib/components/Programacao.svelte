@@ -4,10 +4,9 @@
   const schedule = {
     timeSlots: [
       { time: '14:00 - 15:30', slot: 'session1' },
-      { time: '15:30 - 16:00', slot: 'break1' },
-      { time: '16:00 - 17:30', slot: 'session2' },
-      { time: '17:30 - 18:00', slot: 'break2' },
-      { time: '18:00 - 19:00', slot: 'session3' }
+      { time: '15:30 - 17:00', slot: 'session2' },
+      { time: '17:00 - 18:30', slot: 'session3' },
+      { time: '18:30 - 20:00', slot: 'session4' }
     ],
     days: [
       {
@@ -22,7 +21,6 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
@@ -30,11 +28,17 @@
             room: 'A confirmar',
             color: 'green'
           },
-          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'A matemática dos leilões',
+            room: 'A confirmar',
+            color: 'pink'
+          },
+          session4: {
+            title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
+            abstract: '',
             room: 'A confirmar',
             color: 'pink'
           }
@@ -52,7 +56,6 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Estamos passando por uma instabilidade em nosso sistema',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
@@ -60,7 +63,6 @@
             room: 'A confirmar',
             color: 'green'
           },
-          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Princípio da Casa dos Pombos',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
@@ -82,7 +84,6 @@
             room: 'A confirmar',
             color: 'yellow'
           },
-          break1: { type: 'break', title: 'Tempo Livre' },
           session2: {
             title: 'Olimpíadas de matemática no Brasil',
             speaker: 'Palestrantes Surpresa',
@@ -90,7 +91,6 @@
             room: 'A confirmar',
             color: 'blue'
           },
-          break2: { type: 'break', title: 'Tempo Livre' },
           session3: {
             title: 'Coffee Break Final',
             speaker: '',

@@ -9,7 +9,8 @@
   const sessions = [
     { id: '3-14', day: '3', time: '14h', speaker: '', title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro' },
     { id: '3-1530', day: '3', time: '15h30', speaker: '', title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço' },
-    { id: '3-17', day: '3', time: '17h', speaker: '', title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!' },
+    { id: '3-17', day: '3', time: '17h', speaker: '', title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD' },
+    { id: '3-17', day: '3', time: '18h30', speaker: '', title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!' },
     { id: '4-14', day: '4', time: '14h', speaker: '', title: 'Não importa o que você faça, se souber Matemática fará melhor!' },
     { id: '4-1530', day: '4', time: '15h30', speaker: '', title: 'Estamos passando por uma instabilidade em nosso sistema' },
     { id: '4-17', day: '4', time: '17h', speaker: '', title: 'Princípio da Casa dos Pombos' },
