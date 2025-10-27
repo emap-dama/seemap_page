@@ -325,6 +325,15 @@
     background: #fde047;
   }
 
+  .session-card.brown {
+    background: #ffd28e;
+    color: #663d01;
+  }
+
+  .session-card.brown:hover {
+    background: #ffb341;
+  }
+
   .session-title {
     font-weight: 700;
     line-height: 1.3;
