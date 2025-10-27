@@ -29,16 +29,16 @@
             color: 'green'
           },
           session3: {
-            title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
-            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
-            abstract: 'A matemática dos leilões',
-            room: 'A confirmar',
-            color: 'pink'
-          },
-          session4: {
             title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: '',
+            room: 'A confirmar',
+            color: 'green'
+          },
+          session4: {
+            title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
+            abstract: 'A matemática dos leilões',
             room: 'A confirmar',
             color: 'pink'
           }
@@ -54,7 +54,7 @@
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'Uma palestra inspiradora sobre como o conhecimento matemático é uma ferramenta universal. Discutiremos casos práticos onde a matemática fez a diferença em diversos campos.',
             room: 'A confirmar',
-            color: 'blue'
+            color: 'green'
           },
           session2: {
             title: 'Estamos passando por uma instabilidade em nosso sistema',
@@ -96,7 +96,7 @@
             speaker: '',
             abstract: 'Momento de descontração e networking! Aproveite para conhecer outros participantes, trocar experiências e fazer novas conexões.',
             room: 'Área de convivência',
-            color: 'green'
+            color: 'brown'
           }
         }
       }
