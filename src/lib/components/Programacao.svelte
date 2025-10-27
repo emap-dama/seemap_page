@@ -5,8 +5,7 @@
     timeSlots: [
       { time: '14:00 - 15:30', slot: 'session1' },
       { time: '15:30 - 17:00', slot: 'session2' },
-      { time: '17:00 - 18:30', slot: 'session3' },
-      { time: '18:30 - 20:00', slot: 'session4' }
+      { time: '17:00 - 18:30', slot: 'session3' }
     ],
     days: [
       {
@@ -29,13 +28,6 @@
             color: 'green'
           },
           session3: {
-            title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD',
-            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
-            abstract: '',
-            room: 'A confirmar',
-            color: 'green'
-          },
-          session4: {
             title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
             speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'A matemática dos leilões',
@@ -78,11 +70,11 @@
         dayName: 'Quarta',
         sessions: {
           session1: {
-            title: 'Apresentação de alunos',
-            speaker: 'Alunos Participantes',
-            abstract: 'Momento especial onde os alunos apresentarão seus trabalhos, pesquisas e projetos desenvolvidos.',
+            title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
+            abstract: '',
             room: 'A confirmar',
-            color: 'yellow'
+            color: 'green'
           },
           session2: {
             title: 'Olimpíadas de matemática no Brasil',
