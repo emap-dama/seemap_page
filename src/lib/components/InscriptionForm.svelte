@@ -3,21 +3,21 @@
 
   let form = { nome: '', email: '', instituicao: '', degree: '', comments: '' };
   let selectedTalks = [];
+  let attendanceByTalk = {}; // Nuevo objeto para guardar tipo de asistencia
   let status = 'idle';
   let errorMsg = '';
 
   const sessions = [
-    { id: '3-14', day: '3', time: '14h', speaker: '', title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro' },
-    { id: '3-1530', day: '3', time: '15h30', speaker: '', title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço' },
-    { id: '3-17', day: '3', time: '17h', speaker: '', title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!' },
+    { id: '3-14', day: '3', time: '14h', speaker: 'Yuri Saporito', title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro' },
+    { id: '3-1530', day: '3', time: '15h30', speaker: 'Asla Medeiros', title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço' },
+    { id: '3-17', day: '3', time: '17h', speaker: 'Moacyr Alvim', title: 'Dou-lhe uma, dou lhe duas... Vendido para aquele robô' },
     { id: '4-14', day: '4', time: '14h', speaker: '', title: 'Não importa o que você faça, se souber Matemática fará melhor!' },
-    { id: '4-1530', day: '4', time: '15h30', speaker: '', title: 'Estamos passando por uma instabilidade em nosso sistema' },
+    { id: '4-1530', day: '4', time: '15h30', speaker: '', title: '' },
     { id: '4-17', day: '4', time: '17h', speaker: '', title: 'Princípio da Casa dos Pombos' },
-    { id: '5-14', day: '5', time: '14h', speaker: '', title: 'Teoremas de Existência: da Fórmula de Bhaskara à SVD' },
+    { id: '5-14', day: '5', time: '14h', speaker: '', title: 'Apresentação das apresentações dos alunos' },
     { id: '5-16', day: '5', time: '16h', speaker: '', title: 'Olimpíadas de matemática no Brasil' },
   ];
 
-  // Agrupar sesiones por día
   $: groupedSessions = sessions.reduce((acc, session) => {
     if (!acc[session.day]) acc[session.day] = [];
     acc[session.day].push(session);
@@ -30,7 +30,11 @@
     errorMsg = '';
 
     try {
-      const talks = selectedTalks.join('|');
+      const talks = selectedTalks.map(id => {
+        const attendance = attendanceByTalk[id] || 'não informado';
+        return `${id}:${attendance}`;
+      }).join('|');
+
       const params = new URLSearchParams({
         nome: form.nome,
         email: form.email,
@@ -52,6 +56,7 @@
       status = 'ok';
       form = { nome: '', email: '', instituicao: '', degree: '', comments: '' };
       selectedTalks = [];
+      attendanceByTalk = {};
     } catch (err) {
       status = 'error';
       errorMsg = err.message;
@@ -137,6 +142,22 @@
                 {#if session.title}
                   <div class="talk-title">"{session.title}"</div>
                 {/if}
+                {#if selectedTalks.includes(session.id)}
+                <div class="attendance-buttons">
+                  <button
+                    type="button"
+                    class:selected={attendanceByTalk[session.id] === 'presencial'}
+                    on:click={() => attendanceByTalk[session.id] = 'presencial'}>
+                    Presencial
+                  </button>
+                  <button
+                    type="button"
+                    class:selected={attendanceByTalk[session.id] === 'online'}
+                    on:click={() => attendanceByTalk[session.id] = 'online'}>
+                    Online
+                  </button>
+                </div>
+              {/if}
               </div>
             </label>
           {/each}
@@ -168,6 +189,33 @@
   :global(body) {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  .attendance-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .attendance-buttons button {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid #1b77e7;
+    border-radius: 8px;
+    background: white;
+    color: #1b77e7;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .attendance-buttons button.selected {
+    background: #1b77e7;
+    color: white;
+  }
+
+  .attendance-buttons button:hover:not(.selected) {
+    background: #e0f2fe;
   }
 
   .container {
