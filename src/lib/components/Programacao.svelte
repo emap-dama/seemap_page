@@ -15,21 +15,21 @@
         sessions: {
           session1: {
             title: 'Os impactos da Matemática e da Ciência de Dados no Mercado Financeiro',
-            speaker: 'Yuri Saporito',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'Nesta palestra, exploraremos como a matemática avançada e técnicas de ciência de dados estão revolucionando o mercado financeiro. Discutiremos aplicações práticas de machine learning, análise de séries temporais e modelos estocásticos no trading, gestão de risco e previsão de mercados.',
             room: 'A confirmar',
             color: 'blue'
           },
           session2: {
             title: 'Vizagrams: um mergulho na teoria de visualização de dados e uma proposta de avanço',
-            speaker: 'Asla Medeiros',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'Uma análise profunda sobre as teorias fundamentais da visualização de dados e uma proposta inovadora chamada Vizagrams. Veremos como representações visuais podem transformar dados complexos em insights compreensíveis.',
             room: 'A confirmar',
             color: 'green'
           },
           session3: {
             title: 'Dou-lhe uma, dou-lhe duas... vendido para aquele robô!',
-            speaker: 'Moacyr Alvim',
+            speaker: 'Olhe o Instagram do DAMA para descobrir o palestrante',
             abstract: 'A matemática dos leilões',
             room: 'A confirmar',
             color: 'pink'
